@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { PDFExport } from '@progress/kendo-react-pdf';
 
+import Wrapper from './components/Wrapper/Wrapper';
+
+import './App.css';
+
 class App extends Component {
 	resume;
 
@@ -10,9 +14,9 @@ class App extends Component {
 
 	render() {
 		return (
-			<div style={{ height: '100vh', width: '100vw', paddingTop: 20, backgroundColor: 'gray' }}>
-				<div style={{ textAlign: 'center', marginBottom: 10 }}>
-					<button onClick={this.exportPDF} style={{ margin: 'auto' }}>
+			<div className="main-container">
+				<div className="section-download">
+					<button onClick={this.exportPDF} className="button-download">
 						download
 					</button>
 				</div>
@@ -24,20 +28,9 @@ class App extends Component {
 					keywords=""
 					ref={r => (this.resume = r)}
 				>
-					<div
-						style={{
-							height: 792,
-							width: 612,
-							padding: 'none',
-							backgroundColor: 'white',
-							boxShadow: '5px 5px 5px black',
-							margin: 'auto',
-							overflowX: 'hidden',
-							overflowY: 'hidden',
-						}}
-					>
-						I am the pdf body
-					</div>
+					<Wrapper>
+						<p>I am the content!!!</p>
+					</Wrapper>
 				</PDFExport>
 			</div>
 		);
