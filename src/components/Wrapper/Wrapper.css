@@ -1,10 +1,16 @@
 .wrapper {
-	height: 792px;
 	width: 612px;
+	height: 792px;
+
+	display: flex;
+
 	padding: none;
-	background-color: white;
-	box-shadow: 5px 5px 5px black;
 	margin: auto;
+
+	background-color: white;
+
+	box-shadow: 5px 5px 5px black;
+
 	overflow-x: hidden;
 	overflow-y: hidden;
 }
