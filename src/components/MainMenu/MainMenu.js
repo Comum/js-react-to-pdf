@@ -7,7 +7,8 @@ import './MainMenu.css';
 function MainMenu() {
 	return (
 		<div className="main-menu">
-			<Title title="Miguel Ribeiro" />	
+			<Title title="Miguel Ribeiro" type="main" />
+			<Title title="Web developer" type="sub" />	
 		</div>
 	);
 }
