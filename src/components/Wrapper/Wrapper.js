@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
-import './Wrapper.css';
+import "./Wrapper.css";
 
 function Wrapper(props) {
-	const { children } = props;
+  const { children } = props;
 
-	return <div className="wrapper">{children}</div>;
+  return <div className="wrapper">{children}</div>;
 }
 
 export default Wrapper;
