@@ -1,0 +1,28 @@
+.personal-info-item {
+  width: 100%;
+  min-height: 20px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin-bottom: 10px;
+}
+
+.personal-info-item--icon {
+  width: 20px;
+  height: 100%;
+
+  flex-shrink: 0;
+}
+
+.personal-info-item--value {
+  word-break: break-all;
+  flex-grow: 1;
+
+  font-size: 12px;
+}
+
+.is-link {
+  color: white;
+}

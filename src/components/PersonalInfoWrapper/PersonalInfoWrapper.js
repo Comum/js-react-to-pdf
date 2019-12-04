@@ -1,5 +1,6 @@
 import React from "react";
 
+import PersonalInfoItem from "../PersonalInfoItem/PersonalInfoItem";
 import Title from "../Title/Title";
 import { INFORMATION } from "../../lib/constants";
 
@@ -11,16 +12,21 @@ const getContactsList = details => {
   }
 
   const detailsItems = details.map(detail => (
-    <li key={detail.id}>{detail.value}</li>
+    <PersonalInfoItem
+      key={detail.id}
+      value={detail.value}
+      icon={detail.icon}
+      isLink={detail.isLink}
+    />
   ));
 
-  return <ul>{detailsItems}</ul>;
+  return <ul className="personal-info-list">{detailsItems}</ul>;
 };
 
 function PersonalInfoWrapper() {
   const contactsList = getContactsList(INFORMATION);
   return (
-    <div>
+    <div className="personal-info-wraper">
       <Title title="Contacts" type="category" />
       {contactsList}
     </div>
