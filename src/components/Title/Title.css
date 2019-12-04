@@ -1,20 +1,27 @@
 .title {
-    width: 100%;
-    height: 40px;
+  width: 100%;
+  height: 40px;
 }
 
 .title--main {
-    font-size: 28px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title--category {
+  height: 22px;
+
+  font-size: 20px;
+  text-align: center;
 }
 
 .title--sub {
-    height: 20px;
+  height: 20px;
 
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
